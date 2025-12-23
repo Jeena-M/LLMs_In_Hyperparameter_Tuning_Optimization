@@ -1,0 +1,6 @@
+See Project Report and Project Presentation for more details!
+
+Hyperparameter tuning is an important component of optimization algorithms, yet traditional methods still fail to be computationally efficient. Methods like grid and random search are often very computationally expensive, unstable or inaccurate, especially as functions become increasingly complex. This experiment investigates whether large language models (LLMs) provide an effective alternative to traditional search methods for hyperparameter tuning. We evaluate LLM-guided hyperparameter selection for gradient descent with momentum on the Rosenbrock and Rastrigin functions as our benchmarks. Performance of the LLM models is then compared
+against the grid search and random search under the same iteration budgets. Using models GPT-4o and GPT-4o-mini, the LLMs are prompted with description of the functions and the hyperparameter ranges, and are then given the task of choosing the best learning rate and
+momentum values. Results show that LLMs consistently generated stable configurations and reliably delivered convergence behavior across runs. Our results found that methods outperformed the LLM’s in hyperparameter tuning, however the findings demonstrated the promise
+of LLM guided hyperparameter tuning suggesting better performance for higher dimensional or resource constrained optimization.
